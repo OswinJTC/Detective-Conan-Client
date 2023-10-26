@@ -1,0 +1,19 @@
+.vote-topics{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.selected-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 100px;
+    color: white;
+  }
+  
+  .poster-opacity {
+    opacity: 0.3; /* Adjust the opacity value as needed */
+  }
+  
+.submit-button{
+  margin-bottom: 20px;
+}
