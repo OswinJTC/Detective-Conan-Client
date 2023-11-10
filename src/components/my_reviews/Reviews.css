@@ -31,10 +31,34 @@
 
 .review-row{
     padding-top: 20px ;
-    padding-left: 10%;
-    padding-right: 10%;
+   
     padding-bottom: 30px;
 }
 
 
+.the-whole-review-page{
+    background-color: rgba(0, 0, 0, 0.763);
+}
 
+.review-writter-name{
+    color: rgb(255, 196, 0);
+}
+
+.review-created-time{
+    color: rgb(240, 240, 240);
+}
+
+.the-review-input-box{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.all-the-user-reviews{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.the-whole-review-part{
+    
+}

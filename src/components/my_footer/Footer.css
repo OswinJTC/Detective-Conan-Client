@@ -1,0 +1,50 @@
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+  
+  .footer a {
+    color: #f8f9fa;
+  }
+  
+  .footer a:hover {
+    color: #007bff;
+  }
+
+
+.the-whole-footer-content{
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+  
+
+.Copyright-text{
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.follow-us-words{
+  
+
+}
+
+.the-icons{
+  font-size: 50px;
+}
+
+.all-the-links{
+
+  font-size: 21px;
+  
+  
+}
+
+.all-the-links a{
+  color: white;
+}
+
+ 

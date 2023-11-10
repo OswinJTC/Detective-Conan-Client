@@ -6,41 +6,47 @@ import './HomePage.css';
 
 const HomePage = ({ movies }) => {
   return (
-    <div>
-      <div style={{ marginTop: '20px' }}>
-        <h5 className="text-center" style={{ marginBottom: '20px' }}>
-          電影
-        </h5>
-      </div>
 
+
+    <div className='the-whole-homepage'>
+
+  
+    <div className='the-whole-carousel'>
       <div className="carousel-container">
         <Carousel>
           <Carousel.Item>
             <Link to="/VoteHome">
-              <Paper elevation={3} className="text-card" style={{ backgroundImage: `url( https://i.etsystatic.com/7086259/r/il/08b4a2/671026877/il_570xN.671026877_4m3z.jpg)` }}>
-                <h3>Latest voting function:</h3>
-                <p>#Description goes here</p>
+              <Paper elevation={3} className="text-card" style={{ backgroundImage: `url(https://i.ibb.co/D414vcg/4b9c143a5d0f488fa4d60b392d1c0795-noop.jpg)` }}>
+            
               </Paper>
             </Link>
           </Carousel.Item>
 
           <Carousel.Item>
             <Link to="/MoreReviews">
-              <Paper elevation={3} className="text-card" style={{ backgroundImage: `url(https://www.greenlam.sg/media/catalog/product/cache/15/image/600x650/9df78eab33525d08d6e5fb8d27136e95/g/s/gsc-169-rose-pink_1.jpg)` }}>
-                <h3>Best reviewing function:</h3>
-                <p>#Description goes here</p>
+              <Paper elevation={3} className="text-card" style={{ backgroundImage: `url(https://i.ibb.co/3BvGfHc/800x.jpg)` }}>
+             
               </Paper>
             </Link>
           </Carousel.Item>
 
           <Carousel.Item>
-            <Paper elevation={3} className="text-card" style={{ backgroundImage: `url(https://media.istockphoto.com/id/157527860/photo/pink-sugar-sparkle-background.jpg?s=1024x1024&w=is&k=20&c=b58ke-8mx-jbO1TQg6_6CRXjtUNMhibho-dR79PisRU=)` }}>
-              <h3>Fabulous web app experience:</h3>
-              <p>#Description goes here</p>
+            <Paper elevation={3} className="text-card" style={{ backgroundImage: `url(https://i.ibb.co/mDbsMRK/5546-GF3z-T3y-A25yd-Cz0-Klujj-RA3.jpg)` }}>
+            
             </Paper>
           </Carousel.Item>
         </Carousel>
       </div>
+    </div>
+
+    <div style={{ marginBottom: '600px' }}></div>
+
+    <div className='below-banner'>
+      哈哈哈哈
+    </div>
+
+    
+
     </div>
   );
 };

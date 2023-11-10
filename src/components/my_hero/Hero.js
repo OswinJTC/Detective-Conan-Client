@@ -26,7 +26,7 @@ const Hero = ({movies}) => {
                     <Paper key={movie_item.mid}>
                         
                         <div className = 'movie-card-container'>
-                            <div className="movie-card" style={{"--img": `url(${movie_item.backdrops[1]})`}}>
+                            <div className="movie-card" style={{"--img": `url(${movie_item.backdrops && movie_item.backdrops[1]})`}}>
                                 <div className="movie-detail">
 
                                     {/* Poster */}
@@ -44,7 +44,7 @@ const Hero = ({movies}) => {
                                     <div className="movie-buttons-container">
 
                                         {/* Trailer button */}
-                                        <Link to={`/Trailer/${movie_item.trailerLink.substring(movie_item.trailerLink.length - 11)}`}>
+                                        <Link to={`/Trailer/${movie_item.trailerLink && movie_item.trailerLink.substring(movie_item.trailerLink.length - 11)}`}>
                                             <div className="play-button-icon-container">
                                                 <FontAwesomeIcon className="play-button-icon"
                                                     icon = {faCirclePlay}

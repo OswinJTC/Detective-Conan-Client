@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+body.login-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://wkitty.tw/wp-content/uploads/2019/07/1562823936-2f768ebbc38a2e3075c66c4919967503-1024x607.jpg");
+  background-position: fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 650px;
+  height: 700px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.241);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-size: 100% 100%;
+}
+
+.wrapper {
+  width: 650px; /* Adjusted width */
+  height: 700px;
+  background: rgb(255, 255, 255); /* Adjusted background color with opacity */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.241);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+
+
+.wrapper .title {
+  height: 100px; /* Adjusted height */
+  background: #808080;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-size: 36px; /* Adjusted font size */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form {
+  padding: 40px 40px 40px 40px; /* Adjusted padding */
+}
+
+.wrapper form .signInText {
+  color: grey; /* Set the color to grey */
+  font-size: 60px; /* Adjusted font size */
+  text-align: center; /* Center align the text */
+  margin: 0 auto 30px auto; /* Adjusted margin to center the text */
+}
+
+
+.wrapper form .row {
+  height: 60px; /* Adjusted height */
+  margin-bottom: 30px; /* Adjusted margin */
+  position: relative;
+}
+
+.wrapper form .row input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 20px;
+  border-radius: 8px;
+  border: 2px solid lightgrey; /* Adjusted border thickness */
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+
+form .row input:focus {
+  border-color: #808080;
+  box-shadow: inset 0px 0px 2px 2px rgba(128, 128, 128, 0.25);
+}
+
+form .row input::placeholder {
+  color: #999;
+}
+
+
+
+.wrapper form .pass {
+  margin: -15px 0 40px 0; /* Adjusted margin */
+}
+
+.wrapper form .pass a {
+  color: #007cdc;
+  font-size: 20px; /* Adjusted font size */
+  text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+  text-decoration: underline;
+}
+
+.wrapper form .button button {
+  color: #fff;
+  font-size: 24px; /* Adjusted font size */
+  font-weight: 500;
+  padding: 15px 30px; /* Adjusted padding */
+  background: #808080;
+  border: 1px solid #808080;
+  cursor: pointer;
+  border-radius: 8px; /* Adjusted border radius */
+  text-align: center;
+}
+
+form .button button:hover {
+  background: #686868;
+}
+
+.wrapper form .signup-link {
+  padding-top: 50px;
+  color: #808080;
+  text-align: center;
+  margin-top: 20px; /* Adjusted margin */
+  font-size: 20px; /* Adjusted font size */
+  position: relative; /* Ensure the position is relative */
+  width: 100%; /* Set the width to 100% */
+  display: block; /* Set the display to block */
+}
+
+
+.wrapper form .signup-link a {
+  color: #007cdc; /* Darker shade of blue */
+  text-decoration: underline; /* Add an underline to indicate a link */
+}
+
+
+form .signup-link a:hover {
+  text-decoration: underline;
+}

@@ -7,20 +7,31 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
+import { Link , useNavigate} from 'react-router-dom';
 import "./Header.css";
-import {Link, useNavigate} from "react-router-dom";
 
-const Header = () => {
 
-  const navigate = useNavigate();
+const Header = ({handleLogout, loggedUserName}) => {
 
-    function vote() {
-        navigate(`/Vote/`);
+
+  
+  console.log("UserName in Header:", loggedUserName);
+
+
+  const navigate = useNavigate();  
+
+
+  function goToProfile(jaja){
+    if (loggedUserName) {
+      navigate(`/Profile/${jaja}`);
     }
+  }
+ 
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="custom-navbar">
       <Container fluid className="navbar-container d-flex align-items-center justify-content-between">
+
         <div className="d-flex align-items-center me-1">
           <a href="/" className="custom-brand border me-3">
             <img
@@ -55,11 +66,13 @@ const Header = () => {
             <Nav.Link href="/MoreReviews">電影評論區</Nav.Link>
           </Nav>
 
+          
+
           <Nav className="profile-container border">
             <NavDropdown title={<FontAwesomeIcon icon={faUser} />} id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#profile">Profile</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => goToProfile(loggedUserName)}>Profile</NavDropdown.Item> 
               <NavDropdown.Item href="#rating">Your Rating</NavDropdown.Item>
-              <NavDropdown.Item href="#logout">Log Out</NavDropdown.Item>
+              <NavDropdown.Item onClick={handleLogout}>Log Out</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </div>

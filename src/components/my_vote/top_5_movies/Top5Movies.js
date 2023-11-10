@@ -108,6 +108,7 @@ const Top5Movies = ({ movies }) => {
   };
 
   return (
+    <div className='the-whole-top5'>
     <Container fluid style={{ border: "1px solid white" }}>
 
 <Row style={{ marginBottom: "20px", padding: "20px", borderBottom: "1px solid white" }}>
@@ -220,7 +221,7 @@ const Top5Movies = ({ movies }) => {
           <Row style={{ padding: "10px" }}>
             {movies &&
               movies.map((r, index) => (
-                <Col md={3} key={index} style={{ border: "1px solid white",padding: "10px", textAlign: "center" }}>
+                <Col md={3} key={index} style={{ border: "1px solid white",padding: "30px", textAlign: "center" }}>
                   <motion.button
                     variants={variants}
                     whileHover="hover"
@@ -316,6 +317,7 @@ const Top5Movies = ({ movies }) => {
       )}
 
     </Container>
+    </div>
   );
 };
 
