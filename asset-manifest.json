@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/DetectiveConan/static/css/main.0b077e93.css",
-    "main.js": "/DetectiveConan/static/js/main.107e99e9.js",
-    "index.html": "/DetectiveConan/index.html",
-    "main.0b077e93.css.map": "/DetectiveConan/static/css/main.0b077e93.css.map",
-    "main.107e99e9.js.map": "/DetectiveConan/static/js/main.107e99e9.js.map"
+    "main.css": "/Detective-Conan-Client/static/css/main.0b077e93.css",
+    "main.js": "/Detective-Conan-Client/static/js/main.107e99e9.js",
+    "index.html": "/Detective-Conan-Client/index.html",
+    "main.0b077e93.css.map": "/Detective-Conan-Client/static/css/main.0b077e93.css.map",
+    "main.107e99e9.js.map": "/Detective-Conan-Client/static/js/main.107e99e9.js.map"
   },
   "entrypoints": [
     "static/css/main.0b077e93.css",
