@@ -10,10 +10,24 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [loginError, setLoginError] = useState('');
   const navigate = useNavigate();
+  const [ForgotPasswordshowMessage, setForgotPasswordshowMessage] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleForgetPasswordClick = () => {
+    setForgotPasswordshowMessage(true);
+
+    // Hide the message after 3 seconds
+    setTimeout(() => {
+      setForgotPasswordshowMessage(false);
+    }, 10000);
+  };
+
 
   const handleLogin = async () => {
     try {
+      setLoading(true);
       const response = await api.post("/api/v1/users/login", {
         username: username,
         password: password,
@@ -28,10 +42,19 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
         navigate('/');
 
       } else {
-        console.error('Invalid username or password. Please try again.');
+        console.error('登入失敗', response);
+
       }
+      setLoading(false);
+
     } catch (error) {
-      console.error('An error occurred during login:', error);
+
+      setLoginError('An error occurred during login. Please try again.');
+      setTimeout(() => {
+        setLoginError('');
+      }, 5000);
+      console.error('登入失敗', error);
+      setLoading(false);
     }
   };
 
@@ -44,13 +67,26 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
 
   return (
 
-    <div className="wrapper">
-      <div className="title"><span>名偵探柯南非官方網站</span></div>
+    <div>
+
+    <div className="the-whole-login-part">
+      <div className="log-in-title"><span>名偵探柯南非官方網站</span></div>
+
+      <div>
+          {loginError ? (
+            <div className="error">登入失敗，請確保輸入資料無誤！</div>
+          ) : null}
+      </div>
+
+      <div className='the-login-form'>
       <form>
 
       <div className="signInText">Sign In</div>
-        <div className="row">
+
+        <div className="login-inputRow">
           <i className="fas fa-user"></i>
+
+          <div className='login-username-input'>
           <input
             type="text"
             placeholder="請輸入用戶名稱"
@@ -58,10 +94,13 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
             onChange={(e) => setUsername(e.target.value)}
             required
           />
+          </div>
         </div>
         
-        <div className="row">
+        <div className="login-inputRow">
           <i className="fas fa-lock"></i>
+
+          <div className='login-password-input'>
           <input
             type="password"
             placeholder="請輸入密碼"
@@ -69,15 +108,75 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+          </div>
         </div>
-        <div className="pass"><Link to="#">忘記密碼？</Link></div>
-        <div className="row button">
-          <button type="button" onClick={handleLogin}>馬上登入</button>
+
+        <div className="forget-password"><Link to="#" onClick={handleForgetPasswordClick}>忘記密碼？</Link></div>
+
+        <div className="log-in-button">
+          <button type="button" onClick={handleLogin}>馬上登入
+          
+          </button>
         </div>
-        <div className="signup-link">還沒有帳號? <Link to="/Register">點我註冊</Link></div>
+        <div className="ask-to-signup-link">還沒有帳號? <Link to="/Register">點我註冊</Link></div>
       </form>
+      </div>
+
+      <div>
+
+      {ForgotPasswordshowMessage && (
+      <div className="forgot-message-being-clicked">
+        <h2>目前沒有這項功能,</h2>
+        <h2>自己再去創一個帳號！</h2>
+      </div>
+      )}
+
+      {ForgotPasswordshowMessage && (
+          <div className="overlay" />
+      )}
+
+
+       
+      </div>
     </div>
+
+    <div>
+
+
+
+
+    {loading && (
+        <div
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            width: "80%",
+            textAlign: "center",
+            transform: "translate(-50%, -50%)",
+          
+            color: "white",
+            padding: "20px",
+            borderRadius: "5px",
+            zIndex: "9999",
+          }}
+        >
+          <div className="loading-spinner" />
+        </div>
+      )}
+
+
     
+
+    {loading && (
+          <div className="overlay" />
+      )}
+
+    </div>
+ 
+
+    </div>
+ 
   );
 };
 

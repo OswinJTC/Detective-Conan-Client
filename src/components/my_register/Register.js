@@ -21,21 +21,21 @@ const Register = () => {
     let hasError = false;
 
     if (!username) {
-      setUsernameError('請輸入用戶名稱!!');
+      setUsernameError('缺少用戶名稱!!');
       hasError = true;
     } else {
       setUsernameError('');
     }
 
     if (!email) {
-      setEmailError('請輸入電子郵件!!');
+      setEmailError('缺少電子郵件!!');
       hasError = true;
     } else {
       setEmailError('');
     }
 
     if (!password) {
-      setPasswordError('請輸入密碼!!');
+      setPasswordError('缺少密碼!!');
       hasError = true;
     } else {
       setPasswordError('');
@@ -71,15 +71,33 @@ const Register = () => {
   }, []);
 
   return (
-    <div className="wrapper">
-      <div className="title"><span>名偵探柯南非官方網站</span></div>
+
+    
+
+    <div className="the-whole-register-part">
+    
+      <div className="register-title"><span>名偵探柯南非官方網站</span></div>
+          <div>
+            {emailError || usernameError || passwordError ? (
+              <div className="error">
+              請輸入所有資料！！
+              </div>
+            ) : null}
+          </div>
+
+
+      <div className='the-register-form'>
+
       <form>
 
-      <div className="signInText">Sign Up</div>
-        <div className="row">
+      
+
+      <div className="signUpText">Sign Up</div>
+
+        <div className="register-inputRow">
           <i className="fas fa-user"></i>
           
-          
+          <div className='register-username-input'>
           <input
             type="text"
             placeholder="請輸入用戶名稱"
@@ -87,14 +105,15 @@ const Register = () => {
             onChange={(e) => setUsername(e.target.value)}
             required
           />
-          {usernameError && <div className="error">{usernameError}</div>}
-          
+          </div>
+         
         </div>
         
 
-        <div className="row">
+        <div className="register-inputRow">
           <i className="fas fa-envelope"></i>
-          
+
+          <div className='register-email-input'>
           <input
             type="text"
             placeholder="請輸入電子郵件"
@@ -102,15 +121,17 @@ const Register = () => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          {emailError && <div className="error">{emailError}</div>}
+          </div>
+          
           
         </div>
 
 
 
-        <div className="row">
+        <div className="register-inputRow">
           <i className="fas fa-lock"></i>
-          
+
+          <div className='register-password-input'>
           <input
             type="password"
             placeholder="請輸入密碼"
@@ -118,18 +139,22 @@ const Register = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          {passwordError && <div className="error">{passwordError}</div>}
+          </div>
+           
+
           
         </div>
 
 
       
-        <div className="row button">
+        <div className="register-button">
           <button type="button" onClick={handleRegister}>立即註冊</button>
         </div>
-        <div className="signin-link">已經有帳號? <Link to="/">點我登入</Link></div>
+
+        <div className="ask-to-signin-link">已經有帳號? <Link to="/">點我登入</Link></div>
         
       </form>
+      </div>
     </div>
   );
 };

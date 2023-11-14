@@ -302,7 +302,10 @@ const Top5Movies = ({ movies }) => {
         </div>
       )}
 
-      {showMessage2 && (
+      
+
+    </Container>
+    {showMessage2 && (
         <div
           style={{
             position: "fixed",
@@ -315,8 +318,6 @@ const Top5Movies = ({ movies }) => {
           }}
         />
       )}
-
-    </Container>
     </div>
   );
 };

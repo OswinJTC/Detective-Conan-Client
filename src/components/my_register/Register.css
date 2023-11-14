@@ -11,52 +11,45 @@ body.register-background {
   background-position: fixed;
   background-size: cover;
 }
-.wrapper {
-  width: 650px; /* Adjusted width */
-  height: 750px;
-  background: rgb(255, 255, 255); /* Adjusted background color with opacity */
+.the-whole-register-part {
+  width: 500px; /* Adjusted width */
+  height: 675px;
+  background: white; /* Adjusted background color with opacity */
   border-radius: 10px;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.241);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-size: 100% 100%;
 }
  
 
-
-.wrapper .title {
+.register-title {
   height: 100px; /* Adjusted height */
   background: #808080;
   border-radius: 10px 10px 0 0;
-  color: #fff;
-  font-size: 36px; /* Adjusted font size */
+  color: white;
+  font-size: 30px; /* Adjusted font size */
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.wrapper form {
-  padding: 40px 40px 40px 40px; /* Adjusted padding */
+.the-register-form {
+  padding: 20px 30px 30px 30px; 
 }
 
-.wrapper form .signInText {
-  color: grey; /* Set the color to grey */
-  font-size: 60px; /* Adjusted font size */
-  text-align: center; /* Center align the text */
-  margin: 0 auto 30px auto; /* Adjusted margin to center the text */
+.signUpText {
+  color: grey;  
+  font-size: 60px;  
+  text-align: center;  
+  margin: 0 auto 30px auto; 
 }
 
-
-.wrapper form .row {
-  height: 60px; /* Adjusted height */
-  margin-bottom: 30px; /* Adjusted margin */
-  position: relative;
-}
-
-.wrapper form .row input {
-  height: 100%;
+.register-username-input input{
+  height: 55px;
   width: 100%;
   outline: none;
   padding-left: 20px;
@@ -64,79 +57,116 @@ body.register-background {
   border: 2px solid lightgrey; /* Adjusted border thickness */
   font-size: 20px;
   transition: all 0.3s ease;
+  
 }
 
 
-form .row input:focus {
+.register-username-input:focus {
   border-color: #808080;
   box-shadow: inset 0px 0px 2px 2px rgba(128, 128, 128, 0.25);
 }
 
-form .row input::placeholder {
+
+.register-username-input::placeholder {
   color: #999;
 }
 
-
-
-.wrapper form .pass {
-  margin: -15px 0 40px 0; /* Adjusted margin */
+.register-email-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  padding-left: 20px;
+  border-radius: 8px;
+  border: 2px solid lightgrey; /* Adjusted border thickness */
+  font-size: 20px;
+  transition: all 0.3s ease;
+  margin-top: 30px;
 }
 
-.wrapper form .pass a {
-  color: #007cdc;
-  font-size: 20px; /* Adjusted font size */
-  text-decoration: none;
+
+.register-email-input:focus {
+  border-color: #808080;
+  box-shadow: inset 0px 0px 2px 2px rgba(128, 128, 128, 0.25);
 }
 
-.wrapper form .pass a:hover {
-  text-decoration: underline;
+
+.register-email-input::placeholder {
+  color: #999;
 }
 
-.wrapper form .button button {
+.register-password-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  padding-left: 20px;
+  border-radius: 8px;
+  border: 2px solid lightgrey; /* Adjusted border thickness */
+  font-size: 20px;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+
+}
+
+
+.register-password-input:focus {
+  border-color: #808080;
+  box-shadow: inset 0px 0px 2px 2px rgba(128, 128, 128, 0.25);
+}
+
+
+.register-password-input::placeholder {
+  color: #999;
+}
+
+ 
+
+.register-button button{
   color: #fff;
-  font-size: 24px; /* Adjusted font size */
-  font-weight: 500;
-  padding: 15px 30px; /* Adjusted padding */
+  font-size: 24px;  
   background: #808080;
   border: 1px solid #808080;
   cursor: pointer;
-  border-radius: 8px; /* Adjusted border radius */
+  border-radius: 8px;  
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 300px;
+  width: 100%;
+  height: 65px;
+  margin-top: 50px;
+
 }
 
-form .button button:hover {
+.register-button :hover {
   background: #686868;
 }
 
-.wrapper form .signin-link {
-  padding-top: 50px;
+.ask-to-signin-link {
   color: #808080;
   text-align: center;
-  padding-top: 60px; /* Adjusted margin */
-  font-size: 20px; /* Adjusted font size */
-  position: relative; /* Ensure the position is relative */
-  width: 100%; /* Set the width to 100% */
+  margin-top: 30px;  
+  font-size: 20px;  
+  width: 100%;  
   display: block; /* Set the display to block */
 }
 
 
-.wrapper form .signin-link a {
+ask-to-signin-link a {
   color: #007cdc; /* Darker shade of blue */
   text-decoration: underline; /* Add an underline to indicate a link */
+
 }
 
 
-form .signin-link a:hover {
+ask-to-signin-link a:hover {
   text-decoration: underline;
+  color: #0f5488;
 }
 
 .error {
   color: red;
-  font-size: 14px;
-  margin-top: 5px;
+  font-size: 16px;
   background-color: #ffe6e6;
-  padding: 8px;
+  padding: 6px;
   border-radius: 5px;
+  position: fixed;
+  width: 100%;
+  text-align: center;
 }

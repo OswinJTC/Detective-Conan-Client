@@ -109,6 +109,7 @@ const Top3Movies = ({ movies }) => {
   };
 
   return (
+    <div className='the-whole-top3'>
     <Container fluid style={{ border: "1px solid white" }}>
 
 <Row style={{ marginBottom: "20px", padding: "20px", borderBottom: "1px solid white" }}>
@@ -317,6 +318,7 @@ const Top3Movies = ({ movies }) => {
       )}
 
     </Container>
+    </div>
   );
 };
 
