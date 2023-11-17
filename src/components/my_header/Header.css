@@ -1,23 +1,23 @@
 .custom-navbar {
   width: 100%;
-  height: 100px;
+  height: 90px;
   z-index: 1000;
 }
 
+
 .custom-brand {
-  align-items: center;
-  display: flex;
+  text-decoration: none;
+}
+
+.brand-logo{
+  height: 65px;
 }
 
 .brand-name {
-  margin-right: -200px;
-  color: white;
-  font-size: 30px;
-  margin-left: 20px;
-}
 
-.brand-logo {
-  padding-left: 50px;
+  color: rgb(207, 205, 205);
+  font-size: 28px;
+
 }
 
 .links-container {
@@ -25,34 +25,32 @@
   align-items: center;
 }
 
-.profile-container {
-  display: flex;
-  align-items: center;
+
+.search-bar{
+  width: 400px;
+  height: 50px;
+}
+
+.search-button{
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
 }
 
 .links-container{
-  padding-right: 25px;
-}
 
-.search-container {
-
-  display: flex;
-  align-items: center;
-  padding-right: 50px;
-  position: relative;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-}
-
-.links-container{
-  padding-right: 50px;
-  font-size: 25px;
+  font-size: 19px;
 
 }
 
 .profile-container{
-  padding-left: -500px;
+
   font-size: 25px;
+}
+
+.custom-dropdown .dropdown-menu {
+  left: auto;
+  right: 0;
+  text-align: center;
+  font-size: 18px;
 }

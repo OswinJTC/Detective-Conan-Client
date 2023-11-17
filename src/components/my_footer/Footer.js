@@ -12,35 +12,43 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
+
     <footer className="bg-dark text-center text-white">
-      <div className="container the-whole-footer-content">
+      <div className="container the-whole-footer-content ">
 
         
           
 
-          <div className="row pt-5 all-the-links ">
-  
-                <div className='col-md-9 pt-5 pb-5 all-the-reviews '>
+          <div className="row pt-3 all-the-links ">
 
-                  <h2>電影評論區</h2>
+                <div className='col-md-1 '></div>
+  
+                <div className='col-md-8 pt-3 pb-3 all-the-reviews '>
+
+                  <h4>電影評論區</h4>
                   <hr />
                    
                 </div>
 
-                <div className='col-md-3 pt-5 pb-5 all-the-votes '>
-                  <h2>票選專區</h2>
+                <div className='col-md-2 pt-3 pb-3 all-the-votes '>
+                  <h4>票選專區</h4>
                   <hr />
         
                 </div>
+
+                <div className='col-md-1 '></div>
 
               
           </div>
 
           
 
+          
+
           <div className="row all-the-links ">
+                <div className='col-md-1'></div>
   
-                <div className='col-md-9 pr-1 pl-1 all-the-reviews '>
+                <div className='col-md-8 pr-1 pl-1 all-the-reviews '>
 
                   <div className='row '>
 
@@ -104,13 +112,11 @@ const Footer = () => {
                    
                 </div>
 
-                <div className='col-md-3 pr-1 pl-1 all-the-votes '>
+                <div className='col-md-2 pr-1 pl-1 all-the-votes '>
 
                       <p><Link to="/Top5Movies">最佳劇場版top5</Link></p>
                       <p><Link to="/Top3Movies">最爛劇場版top3</Link></p>
-                      <p><Link to="/Reviews/24">最懸疑</Link></p>
                       <p><Link to="/Reviews/25">最刺激</Link></p>
-                      <p><Link to="/Reviews/26">最有藝術</Link></p>
                       <p><Link to="/Reviews/23">喜歡的角色</Link></p>
                       <p><Link to="/Reviews/24">討厭的角色</Link></p>
                       <p><Link to="/Reviews/25">最佳情侶黨</Link></p>
@@ -119,33 +125,44 @@ const Footer = () => {
                   
                 </div>
 
+                <div className='col-md-1 '></div>
+
                
 
           </div>
 
           <div className="row">
-            <div className='follow-us-words pt-5 pb-3'>
+            <div className='follow-us-words pt-5 pb-1'>
               <h3>Follow Us</h3>
             </div>
           </div>
 
-          <div className="row the-icons pb-5 justify-content-center ">
+          <div className="row the-icons pb-4 justify-content-center ">
   
                 <div className='col-md-1 pr-1 pl-1 IG-icon'>
-                  <FontAwesomeIcon icon={faInstagram} /> 
-                </div>
-
-                <div className='col-md-1 pr-1 pl-1 FB-icon'>
-                  <FontAwesomeIcon icon={faFacebook} /> 
+                  <a href="https://www.instagram.com/0s_w1n.25/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
                 </div>
 
                 <div className='col-md-1 pr-1 pl-1 IG-icon'>
-                  <FontAwesomeIcon icon={faLinkedin} /> 
+                  <a href="https://www.facebook.com/profile.php?id=100047866058465" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
                 </div>
 
-                <div className='col-md-1 pr-1 pl-1 FB-icon'>
-                  <FontAwesomeIcon icon= {faGithub} />
+                <div className='col-md-1 pr-1 pl-1 IG-icon'>
+                  <a href="https://www.linkedin.com/in/chen-jui-tai/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} /> 
+                  </a>
                 </div>
+
+                <div className='col-md-1 pr-1 pl-1 IG-icon'>
+                  <a href="https://github.com/OswinJTC" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon= {faGithub} />
+                  </a>
+                </div>
+
 
           </div>
 
@@ -154,7 +171,7 @@ const Footer = () => {
 
           
        
-      <div className="Copyright-text text-center pt-5 pb-5">
+      <div className="Copyright-text text-center pt-3 pb-3">
         Copyright © {new Date().getFullYear()} 柯南劇場版討論區 All Rights Reserved.
       </div>
     </footer>

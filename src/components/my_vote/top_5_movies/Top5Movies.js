@@ -108,6 +108,7 @@ const Top5Movies = ({ movies }) => {
   };
 
   return (
+    
     <div className='the-whole-top5'>
     <Container fluid style={{ border: "1px solid white" }}>
 
@@ -305,20 +306,9 @@ const Top5Movies = ({ movies }) => {
       
 
     </Container>
-    {showMessage2 && (
-        <div
-          style={{
-            position: "fixed",
-            top: "0",
-            left: "0",
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            zIndex: "9998",
-          }}
-        />
-      )}
+    
     </div>
+    
   );
 };
 

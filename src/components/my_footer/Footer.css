@@ -12,39 +12,32 @@
   }
 
 
-.the-whole-footer-content{
-  max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
 
-}
   
 
 .Copyright-text{
-  font-size: 20px;
+  font-size: 18px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.follow-us-words{
-  
 
-}
-
-.the-icons{
+.the-icons a{
   font-size: 50px;
-}
-
-.all-the-links{
-
-  font-size: 21px;
-  
-  
-}
-
-.all-the-links a{
+  text-decoration: none;
   color: white;
 }
 
+.the-icons a:hover {
+  color: rgb(174, 174, 174); /* You can customize the hover color if needed */
+}
+
+
+.all-the-links a{
+  font-size: 18px;
+  color: white;
+}
+
+.all-the-links a:hover {
+  color: rgb(174, 174, 174); /* You can customize the hover color if needed */
+}
  

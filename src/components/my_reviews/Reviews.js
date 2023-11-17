@@ -129,7 +129,7 @@ const Reviews = ({ getMovieData, singleMovie, review, getUserData, singleUser}) 
      </div>
            </Col>
             <Col xs={6} className='border' style={{ paddingLeft: 0 }}>
-              fuck you
+              hello
             </Col>
 
             <div style={{ marginBottom: '200px' }}></div>

@@ -77,11 +77,10 @@ const Register = () => {
     <div className="the-whole-register-part">
     
       <div className="register-title"><span>名偵探柯南非官方網站</span></div>
+      
           <div>
             {emailError || usernameError || passwordError ? (
-              <div className="error">
-              請輸入所有資料！！
-              </div>
+              <div className="error">請輸入所有資料！！</div>
             ) : null}
           </div>
 

@@ -1,10 +1,11 @@
   .carousel-container {
     
-    width: 75%;
-    margin-top: 100px;
+    width: 90%;
+    margin-top: 50px;
     
   }
-  
+
+
   .text-card {
     border: 10px solid black;
     border-radius: 10px;
@@ -35,11 +36,31 @@
   .the-whole-homepage{
     background-color: rgba(0, 0, 0, 0.655);
   }
+ 
 
-  .below-banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 100px;
-
+  .below-banner-image {
+    
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
   }
+
+  .below-carousel-container{
+    background-image: url("https://wkitty.tw/wp-content/uploads/2019/07/1562823936-2f768ebbc38a2e3075c66c4919967503-1024x607.jpg");
+  }
+  
+  
+  .below-banner-container{
+
+    background-color: rgba(161, 161, 161, 0.384);
+    
+  
+
+}
+
+.square-container {
+  width: 350px; /* Set the desired width */
+  height: 350px; /* Set the desired height */
+  overflow: hidden;
+  
+}
+

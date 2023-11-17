@@ -1,9 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './VoteHome.css';
 
-const VoteHome = () => {
+const VoteHome = () => { 
   return (
-    <div>
+    <div className='the-whole-votehoome'>
+    <div className='container'>
+      <div className='row border'>
+
+      <div className='col-md-9 border'>
       <div style={{ marginTop: "20px" }}>
         <h5 className="text-center" style={{ marginBottom: "20px" }}>電影</h5>
         <ul className="list-group">
@@ -38,6 +43,14 @@ const VoteHome = () => {
           </li>
         </ul>
       </div>
+      </div>
+
+      <div className='col-md-3 border d-flex align-items-center justify-content-center'>
+         <img src="https://image.uniqlo.com/UQ/ST3/jp/imagesother/detective-conan/23ss/img/character-akai.png?20230320" className="show-one-shhh"/>
+      </div>
+
+      </div>
+    </div>
     </div>
   );
 };
