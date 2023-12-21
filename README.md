@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# An individual side-project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application featuring Detective Conan movie reviews and votes. 
 
-## Available Scripts
 
-In the project directory, you can run:
+![Screenshot 2023-12-21 at 12 05 14 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/28bc27a1-780a-4cf1-8e72-9ce98939de1c)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1440" alt="Screenshot 2023-12-21 at 12 04 35 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/003481fe-41bd-4867-8d15-543de937dd2a">
+![Screenshot 2023-12-21 at 12 04 49 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/4128e388-3238-468a-b9ce-c280553522e0)
+![Screenshot 2023-12-21 at 12 06 40 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/1ccada0b-b596-4405-b6f2-ec36146c0266)
+![Screenshot 2023-12-21 at 12 04 15 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/52e9e3f1-50f4-49e3-92d4-db18b3969563)
+![Screenshot 2023-12-21 at 12 03 15 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/bc81283c-995a-4e3c-b2ae-b67bc0c03505)
+![Screenshot 2023-12-21 at 12 07 19 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/d43745cc-e128-49ca-92af-6d0b003a0a3b)
+![Screenshot 2023-12-21 at 12 07 47 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/8528e4ea-39e8-4060-af5b-c0dc2967ed34)
+![Screenshot 2023-12-21 at 12 14 05 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/651ebba2-8659-4f69-9316-7fff9f496def)
+<img width="1440" alt="Screenshot 2023-12-21 at 12 20 00 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/996252b7-36a7-4982-8687-c20d2aef6328">
+![Screenshot 2023-12-21 at 12 21 26 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/46155da8-461a-4443-9822-e4c42dc6e596)
+![Screenshot 2023-12-21 at 12 05 04 PM](https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/63cb366e-6d59-43d7-91c1-b84014ddd536)
