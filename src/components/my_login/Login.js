@@ -3,6 +3,7 @@ import api from '../../api/axiosConfig';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -21,7 +22,7 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
     // Hide the message after 3 seconds
     setTimeout(() => {
       setForgotPasswordshowMessage(false);
-    }, 10000);
+    }, 3000);
   };
 
 
@@ -70,7 +71,19 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
     <div>
 
     <div className="the-whole-login-part">
-      <div className="log-in-title"><span>名偵探柯南非官方網站</span></div>
+      <div className="log-in-title d-flex justify-content-center align-items-center">
+        <span>名偵探柯南非官方網站</span>
+        
+        
+        
+      </div>
+
+      <div className="computerPlease pb-3">
+        <h5>( 請使用電腦瀏覽 )</h5>
+        
+        
+        
+      </div>
 
       <div>
           {loginError ? (
@@ -118,7 +131,9 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
           
           </button>
         </div>
-        <div className="ask-to-signup-link">還沒有帳號? <Link to="/Register">點我註冊</Link></div>
+        <div className="ask-to-signup-link">
+          還沒有帳號? <Link to="/Register">點我註冊</Link>
+        </div>
       </form>
       </div>
 
