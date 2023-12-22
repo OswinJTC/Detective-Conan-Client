@@ -19,6 +19,12 @@ const Header = ({ handleLogout, loggedUserName }) => {
     }
   }
 
+  function goToViewReviews(jaja) {
+    if (loggedUserName) {
+      navigate(`/ViewReviews/${jaja}`);
+    }
+  }
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="custom-navbar">
       <div className="container-fluid navbar-container">
@@ -72,13 +78,17 @@ const Header = ({ handleLogout, loggedUserName }) => {
           <div className="col-md-4 d-flex align-items-center justify-content-center ">
 
             <div className="row">
-              <div className="col-md-12 links-container d-flex align-items-center justify-content-end ">
+              <div className="col-md-12 links-container d-flex align-items-center justify-content-end">
                 <Nav className="align-items-center">
 
-                  <a href="/VoteHome" className="nav-link">票選專區</a>
-                  <a href="/MoreReviews" className="nav-link">電影評論區</a>
-                  <a href="#" className="nav-link">關於我們</a>
-                  <a href="#" className="nav-link">常見問題</a>
+                  
+
+                  <Link to="/VoteHome" className="nav-link">票選專區</Link>
+                  <Link to="/MoreReviews" className="nav-link">電影評論區</Link>
+                  <Link to="/AboutUs" className="nav-link">關於我們</Link>
+                  <Link to="/PleaseWait" className="nav-link">常見問題</Link>
+       
+     
 
 
                   <NavDropdown
@@ -86,8 +96,8 @@ const Header = ({ handleLogout, loggedUserName }) => {
                     id="collasible-nav-dropdown"
                     className="d-flex align-items-center justify-content-center custom-dropdown">
 
-                    <NavDropdown.Item onClick={() => goToProfile(loggedUserName)}>個認資料</NavDropdown.Item>
-                    <NavDropdown.Item href="#rating">我的評論</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => goToProfile(loggedUserName)}>個人資料</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => goToViewReviews(loggedUserName)}>我的評論</NavDropdown.Item>
                     <NavDropdown.Item onClick={handleLogout}>登出</NavDropdown.Item>
 
                   </NavDropdown>

@@ -1,15 +1,17 @@
 
 .poster-paper{
-    height: 750px;
+    height: 475px;
     border: 1px solid gold;
     border-radius: 10px;
     overflow: hidden;
-    margin-left: 100px;
+}
+
+.movie-title{
+    margin-top: 100px;
 }
 
 .blank-row {
-    margin-top: 100px;  
-    margin-bottom: 20px; 
+    margin-top: 50px;  
     visibility:hidden;
   }
   
@@ -24,9 +26,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .review-row{
@@ -59,6 +59,4 @@
     margin-right: 50px;
 }
 
-.the-whole-review-part{
-    
-}
+ 

@@ -5,7 +5,7 @@ const ReviewForm = ({handleSubmit,revText,defaultValue}) => {
 
     <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>{"Write a Review?"}</Form.Label>
+            <Form.Label>{"一同參與評論吧！"}</Form.Label>
             <Form.Control ref={revText} as="textarea" rows={3} defaultValue={defaultValue} />
         </Form.Group>
         <Button variant="outline-info" onClick={handleSubmit}>Submit</Button>

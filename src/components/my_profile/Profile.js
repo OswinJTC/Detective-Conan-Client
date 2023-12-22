@@ -116,11 +116,11 @@ const Profile = ({ getUserData, singleUser }) => {
     <Container fluid className="profile-main-container">
 
       <div className="profile-title-container">
-        My Profile Place
+        My Profile
       </div>
 
       <div className="hello-username-container">
-        Hello {singleUser?.username}
+        Hello "{singleUser?.username}"
       </div>
 
       <Container className="profile-container">

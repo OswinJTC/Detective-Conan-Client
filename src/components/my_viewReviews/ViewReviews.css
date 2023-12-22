@@ -1,0 +1,14 @@
+.the-whole-viewReviews-page{
+    background-color: rgb(87, 87, 87);
+}
+
+
+
+.review-origin-movie-poster-container {
+    width: 200px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+    overflow: hidden;
+    
+  }
+  
+  

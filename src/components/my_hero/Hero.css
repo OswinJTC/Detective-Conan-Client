@@ -3,12 +3,12 @@
     background-color: black;
     padding-right: 75px;
     padding-left: 75px;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 75px;
 }
 
 .movie-poster{
-    height: 600px;
+    height: 450px;
     border: 1px solid gold;
     border-radius: 10px;
     overflow: hidden;
@@ -21,7 +21,7 @@
 }
 
 .movie-card-container{
-    height: 1000px;
+    height: 700px;
     background-color: black;
 }
 

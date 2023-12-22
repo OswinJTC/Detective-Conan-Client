@@ -112,27 +112,27 @@ const Top5Movies = ({ movies }) => {
     <div className='the-whole-top5'>
     <Container fluid style={{ border: "1px solid white" }}>
 
-<Row style={{ marginBottom: "20px", padding: "20px", borderBottom: "1px solid white" }}>
+<Row style={{ marginBottom: "20px", padding: "60px", borderBottom: "1px solid white" }}>
   <Col>
-    <h2 className="text-center mt-3 mb-5" style={{fontSize: "100px"}}>最佳劇場版 Top 5</h2>
+    <h2 className="text-center mt-1 mb-2" style={{fontSize: "70px"}}>最佳劇場版 Top 5</h2>
     <div style={{ marginTop: "20px", textAlign: "center", color: "white" }}>
       <Container style={{ marginTop: "20px", textAlign: "center", color: "white"}}>
-        <h4 style = {{ fontSize: "75px" }}>當前排名</h4>
+        <h4 style = {{ fontSize: "55px" }}>當前排名</h4>
 
         {sortedArray && (
         <div>
-         <Container style={{ margin: "0 auto", border: "1px solid white", padding: "10px" }}>
+         <Container style={{ margin: "0 auto", padding: "20px" }}>
             <Row style={{ background: "lightgray", margin: "5px" }}>
-              <Col style={{ fontSize: "50px", color: "black" }}>名次</Col>
-              <Col style={{ fontSize: "50px", color: "black" }}>片名</Col>
-              <Col style={{ fontSize: "50px", color: "black" }}>積分</Col>
+              <Col style={{ fontSize: "30px", color: "black" }}>名次</Col>
+              <Col style={{ fontSize: "30px", color: "black" }}>片名</Col>
+              <Col style={{ fontSize: "30px", color: "black" }}>積分</Col>
             </Row>
            {expanded
             ? sortedArray.map((r, idx) => (
               <Container key={idx} style={{ border: "1px solid white", padding: "10px", background: "whitesmoke", margin: "10px" }}>
-                <Row style={{  fontSize: "40px" }}>
+                <Row style={{  fontSize: "100px" }}>
                   <Col style={{ color: "black" }}>{idx + 1}</Col>
-                  <Col style={{ paddingLeft: "20px", color: "black" }}>
+                  <Col style={{ paddingLeft: "30px", color: "black" }}>
                   {selectedMovies[r.index] ? selectedMovies[r.index].title : ""}
                   </Col>
                   <Col style={{ color: "black" }}>{r.value}分</Col>

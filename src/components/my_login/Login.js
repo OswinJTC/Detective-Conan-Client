@@ -162,6 +162,10 @@ const Login = ({ setIsLoggedIn, setLoggedUserName}) => {
           }}
         >
           <div className="loading-spinner" />
+          <div className='mt-2'>
+            <h5>系統更新資料庫中，至多需兩分鐘。謝謝您的耐心等待</h5>
+          </div>
+          
         </div>
       )}
 

@@ -12,12 +12,14 @@ const Register = () => {
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   
 
   
   const navigate = useNavigate();  
 
   const handleRegister = async () => {
+    
     let hasError = false;
 
     if (!username) {
@@ -46,6 +48,7 @@ const Register = () => {
     }
 
     try {
+      setLoading(true);
       const response = await api.post("/api/v1/registration", {
         username: username,
         email: email,
@@ -58,6 +61,7 @@ const Register = () => {
       } else {
         setError('Registration failed. Please try again.');
       }
+      setLoading(false);
     } catch (error) {
       setError('An error occurred during registration.');
     }
@@ -153,6 +157,37 @@ const Register = () => {
         <div className="ask-to-signin-link">已經有帳號? <Link to="/">點我登入</Link></div>
         
       </form>
+
+      {loading && (
+        <div
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            width: "80%",
+            textAlign: "center",
+            transform: "translate(-50%, -50%)",
+          
+            color: "white",
+            padding: "20px",
+            borderRadius: "5px",
+            zIndex: "9999",
+          }}
+        >
+          <div className="loading-spinner" />
+          <div className='mt-2'>
+            <h5>系統更新資料庫中，至多需兩分鐘。謝謝您的耐心等待</h5>
+          </div>
+          
+        </div>
+      )}
+
+
+    
+
+    {loading && (
+          <div className="overlay" />
+      )}
       </div>
     </div>
   );

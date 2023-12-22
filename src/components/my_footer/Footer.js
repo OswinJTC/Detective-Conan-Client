@@ -116,10 +116,10 @@ const Footer = () => {
 
                       <p><Link to="/Top5Movies">最佳劇場版top5</Link></p>
                       <p><Link to="/Top3Movies">最爛劇場版top3</Link></p>
-                      <p><Link to="/Reviews/25">最刺激</Link></p>
-                      <p><Link to="/Reviews/23">喜歡的角色</Link></p>
-                      <p><Link to="/Reviews/24">討厭的角色</Link></p>
-                      <p><Link to="/Reviews/25">最佳情侶黨</Link></p>
+                      <p><Link to="/PleaseWait">最刺激</Link></p>
+                      <p><Link to="/PleaseWait">喜歡的角色</Link></p>
+                      <p><Link to="/PleaseWait">討厭的角色</Link></p>
+                      <p><Link to="/PleaseWait">最佳情侶黨</Link></p>
               
                     
                   
