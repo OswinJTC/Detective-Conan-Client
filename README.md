@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# An individual side-project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application featuring Detective Conan movie reviews and votes. 
 
-## Available Scripts
+<img width="1440" alt="Screenshot 2023-12-21 at 12 05 14 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/3d570a68-c8cb-4e38-9060-0654a4522d0d">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 04 35 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/89aacfb7-3833-4e63-a910-1040fd40e73d">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 04 49 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/3a57476c-85de-4917-a9ca-0e7188ffef4d">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 06 40 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/ab9abffa-0ff1-4a92-a6c0-5a9092ce3471">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 04 15 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/3bba633f-67ab-477f-ac13-d35c07852a65">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 03 15 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/c82c0ce1-227a-452c-b951-f8c1259b870b">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 07 19 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/4ecef77f-ca38-46fb-a1e7-d40ec7e503a7">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 07 47 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/6f548d67-9a58-4c40-8d2f-7601ed694ce4">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 14 05 PM" src="https://github.com/OswinJTC<img width="1440" alt="Screenshot 2023-12-21 at 12 20 00 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/eed56a79-39e5-40e7-acd2-447c392127f4"><img width="1440" alt="Screenshot 2023-12-21 at 12 21 26 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/5f85e409-b7b4-4260-bd4d-36ba2230f4c6">
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+/Detective-Conan-Client/assets/129711775/f9d15ab3-be90-4eba-a4d8-3d638f339e09">
+<img width="1440" alt="Screenshot 2023-12-21 at 12 05 04 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/4f307151-6113-4a4d-83f4-3e695273894a">
