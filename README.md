@@ -1,7 +1,7 @@
 # An individual side-project
 
 This is a web application featuring Detective Conan movie reviews and votes.
-(For backend code, please go to repository "DetectiveConanV1") 
+(For backend code, please go to repository "DetectiveConanV1") [View live](https://detective-conan-client.onrender.com/)
 
 <img width="1440" alt="Screenshot 2023-12-21 at 12 05 14 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/3d570a68-c8cb-4e38-9060-0654a4522d0d">
 <img width="1440" alt="Screenshot 2023-12-21 at 12 04 35 PM" src="https://github.com/OswinJTC/Detective-Conan-Client/assets/129711775/89aacfb7-3833-4e63-a910-1040fd40e73d">
